@@ -46,7 +46,6 @@ header>div:first-child>div>button {
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-
 }
 
 header>div:first-child>div>button:first-child {
@@ -58,35 +57,39 @@ header>div:first-child>div>button:first-child {
 header>div:first-child>div>button:last-child {
     background-color: #f5f5f5;
     color: black;
-
 }
 
 header>div:last-child {
-    display: inline-block;
     display: flex;
-    flex-direction: column;
-    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     padding: 30px 200px;
 }
 
-header>div:last-child>p:first-child {
+header>div:last-child>div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+header>div:last-child>div:first-child>p:first-child {
     color: lightblue;
     font-size: 20px;
     margin: 15px 0;
 }
 
-header>div:last-child>h1 {
+header>div:last-child>div:first-child>h1 {
     color: #f5f5f5;
     font-size: 50px;
     width: 550px;
     margin: 15px 0;
 }
 
-header>div:last-child>h1>span {
+header>div:last-child>div:first-child>h1>span {
     color: rgb(136, 205, 227);
 }
 
-header>div:last-child>p:nth-child(3) {
+header>div:last-child>div:first-child>p:nth-child(3) {
     font-size: 20px;
     margin: 15px 0 15px 0;
     width: 650px;
@@ -94,7 +97,8 @@ header>div:last-child>p:nth-child(3) {
 
 .tim-kiem {
     display: flex;
-    width: 800px;
+    width: 100%;
+    max-width: 650px;
     background-color: white;
     padding: 10px;
     border-radius: 25px;
@@ -114,6 +118,10 @@ header>div:last-child>p:nth-child(3) {
     padding: 0 25px;
     border-radius: 20px;
     cursor: pointer;
+}
+
+header>div:last-child>div:last-child>img {
+    width: 800px;;
 }
 
 #gioi-thieu {
@@ -146,7 +154,7 @@ header>div:last-child>p:nth-child(3) {
 }
 
 #gioi-thieu>img {
-    width: 30%;
+    width: 40%;
 }
 
 #tinh-nang {
@@ -207,7 +215,7 @@ header>div:last-child>p:nth-child(3) {
     padding: 15px 25px;
     border-radius: 20px;
     cursor: pointer;
-    width: 40%;
+    width: fit-content;
 }
 
 .hinh-mo-ta-tl {
@@ -231,10 +239,15 @@ header>div:last-child>p:nth-child(3) {
 #tinh-nang>div>div:nth-child(4),
 #tinh-nang>div>div:last-child {
     position: absolute;
-    height: 240px;
-    padding: 40px 30px;
+    height: 250px;
     background-color: #ffffff;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: left;
 }
 
 #tinh-nang>div>div:nth-child(2) {
