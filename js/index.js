@@ -21,7 +21,7 @@ thongBao.addEventListener("click", function (event) {
     }
 });
 
-const formTimKiem = document.getElementById("tim-kiem");
+const formTimKiem = document.getElementById("form-tim-kiem");
 formTimKiem.addEventListener("submit", function (event) {
     event.preventDefault();
     hienThongBao();
