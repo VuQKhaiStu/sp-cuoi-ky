@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,40 @@
     <link rel="stylesheet" href="../css/chung.css">
     <link rel="stylesheet" href="../css/dangki.css">
 </head>
+
 <body>
-   
-   <main>
-    <div class="tao-tai-khoan">
-        <div class="logo">
-            <img src="../assets/icons/graduation-cap.png" alt="graduation-cap">
-            <h1>EDUKA</h1>
+
+    <main>
+        <div class="tao-tai-khoan">
+            <div class="logo">
+                <img src="../assets/icons/graduation-cap.png" alt="graduation-cap">
+                <h1>EDUKA</h1>
+            </div>
+            <h3>Tạo tài khoản mới</h3>
+            <p>Tham gia cộng động EDUKA để học hỏi, chia sẻ<br> và phát triển cùng nhau!</p>
+            <form class="form-dang-ki">
+                <div class="icon">
+                    <img src="../assets/icons/nguoidung.png" alt="nguoidung">
+                    <input type="text" placeholder="Họ và tên" id="name">
+                </div>
+                <div class="icon">
+                    <img src="../assets/icons/email.png" alt="email">
+                    <input type="email" placeholder="Email" id="email">
+                </div>
+                <div class="icon">
+                    <img src="../assets/icons/khoa.png" alt="matkhau">
+                    <input type="password" placeholder="Mật khẩu" id="password">
+                </div>
+                <div class="icon">
+                    <img src="../assets/icons/khoa.png" alt="xacnhanmatkhau">
+                    <input type="password" placeholder="Xác nhận mật khẩu" id="confirm-password">
+                </div>
+                <button type="submit">Đăng ký</button>
+            </form>
+            <p class="dang-nhap">Đã có tài khoản? <a href="dangnhap.html">Đăng nhập</a></p>
         </div>
-        <h3>Tạo tài khoản mới</h3>
-        <p>Tham gia cộng động EDUKA để học hỏi, chia sẻ<br> và phát triển cùng nhau!</p>
-        <form >
-            <div class="icon" >
-                <img src="../assets/icons/nguoidung.png" alt="nguoidung">
-                <input type="text" placeholder="Họ và tên">
-            </div>
-            <div class="icon">
-                <img src="../assets/icons/email.png" alt="email">
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="icon">
-                <img src="../assets/icons/khoa.png" alt="matkhau">
-                <input  type="password" placeholder="Mật khẩu">
-            </div>
-            <div class="icon">
-                <img src="../assets/icons/khoa.png" alt="xacnhanmatkhau">
-                <input type="password" placeholder="Xác nhận mật khẩu">
-            </div>
-            <button><a href="dangnhap.html">Đăng ký</a></button>
-        </form>  
-        <p class="dang-nhap">Đã có tài khoản? <a href="dangnhap.html">Đăng nhập</a></p>
-    </div>
-   </main> 
+    </main>
+    <script src="../js/dangki.js"></script>
 </body>
+
 </html>

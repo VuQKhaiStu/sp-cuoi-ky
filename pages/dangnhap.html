@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <link rel="stylesheet" href="../css/chung.css">
+    <link rel="stylesheet" href="../css/chung.css">
     <link rel="stylesheet" href="../css/dangnhap.css">
 </head>
+
 <body>
-    
-   <main>
-    <div class="tao-tai-khoan">
-        <div class="logo">
-            <img src="../assets/icons/graduation-cap.png" alt="graduation-cap">
-            <h1>EDUKA</h1>
+
+    <main>
+        <div class="tao-tai-khoan">
+            <div class="logo">
+                <img src="../assets/icons/graduation-cap.png" alt="graduation-cap">
+                <h1>EDUKA</h1>
+            </div>
+            <h3>Đăng nhập</h3>
+            <p>Đăng nhập để tiếp tục khám phá, học hỏi và <br> kết nối cùng cộng đồng sinh viên</p>
+            <form class="form-dang-nhap">
+
+                <div class="icon">
+                    <img src="../assets/icons/email.png" alt="email">
+                    <input type="email" placeholder="Email hoặc tên đăng nhập" id="email">
+                </div>
+                <div class="icon">
+                    <img src="../assets/icons/khoa.png" alt="matkhau">
+                    <input type="password" placeholder="Mật khẩu" id="password">
+                </div>
+                <div class="ghinho-quenmatkhau">
+                    <label>
+                        <input type="checkbox" name="remember" id="remember">Ghi nhớ đăng nhập
+                    </label>
+                    <a href="#">Quên mật khẩu?</a>
+                </div>
+                <button type="submit">Đăng nhập</button>
+            </form>
+            <p class="dang-ki">Chưa có tài khoản? <a href="dangki.html">Đăng ký</a></p>
         </div>
-        <h3>Đăng nhập</h3>
-        <p>Đăng nhập để tiếp tục khám phá, học hỏi và <br> kết nối cùng cộng đồng sinh viên</p>
-        <form >
-           
-            <div class="icon">
-                <img src="../assets/icons/email.png" alt="email">
-                <input type="email" placeholder="Email hoặc tên đăng nhập">
-            </div>
-            <div class="icon">
-                <img src="../assets/icons/khoa.png" alt="matkhau">
-                <input  type="password" placeholder="Mật khẩu">
-            </div>
-            <div class="ghinho-quenmatkhau">
-                <label>
-                    <input type="checkbox" name="remember">Ghi nhớ đăng nhập
-                </label>
-                <a href="#">Quên mật khẩu?</a>
-            </div>
-            <button><a href="#">Đăng nhập</a></button>
-        </form>  
-        <p class="dang-ki">Chưa có tài khoản? <a href="dangki.html">Đăng ký</a></p>
-    </div>
-   </main> 
+    </main>
 </body>
+
 </html>

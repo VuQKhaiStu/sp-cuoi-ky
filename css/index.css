@@ -1,6 +1,7 @@
 header {
     padding-top: 73px;
 }
+
 header>div:first-child {
     display: flex;
     align-items: center;
@@ -192,10 +193,7 @@ header>div:last-child>div:last-child>img {
 
 #gioi-thieu>img {
     width: 40%;
-<<<<<<< HEAD
     height: auto;
-=======
->>>>>>> tthuy
 }
 
 #tinh-nang {
@@ -427,6 +425,7 @@ footer>p {
     left: 200px;
     top: 70px;
 }
+
 .thong-bao {
     display: none;
     position: fixed;
@@ -440,7 +439,7 @@ footer>p {
     align-items: center;
 }
 
-.thong-bao > div {
+.thong-bao>div {
     background-color: white;
     padding: 30px;
     border-radius: 15px;
