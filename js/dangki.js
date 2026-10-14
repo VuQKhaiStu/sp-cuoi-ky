@@ -4,6 +4,8 @@ const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
 const confirmPasswordInput = document.getElementById("confirm-password");
 const thongBaoDangKi = document.getElementById("thong-bao-dang-ki");
+const thongBaoThieuThongTin = document.getElementById("thieu-thong-tin");
+const btnDongThongBao = document.querySelectorAll(".btn-dong-thong-bao");
 formdki.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -13,12 +15,17 @@ formdki.addEventListener("submit", function (event) {
     const xacNhanMk = confirmPasswordInput.value;
 
     if (tenDangNhap === "" || email === "" || matKhau === "" || xacNhanMk === "") {
-        alert("Vui lòng nhập đủ thông tin!");
+        thongBaoThieuThongTin.style.display = "flex";
+        return;
+    }
+    
+    if (matKhau.length < 8){
+        // thông báo mật khẩu ngắn 
         return;
     }
 
     if (matKhau !== xacNhanMk) {
-        alert("Mật khẩu không đúng!");
+        // thông báo mật khẩu không khớp
         return;
     }
 
@@ -31,11 +38,11 @@ formdki.addEventListener("submit", function (event) {
     }
     for (let i = 0; i < dsTk.length; i++) {
         if (dsTk[i].tenDangNhap === tenDangNhap) {
-            alert("Tên đăng nhập đã tồn tại!");
+            // thông báo tên đăng nhập đã tồn tại
             return;
         }
         if (dsTk[i].email === email) {
-            alert("Email đã được sử dụng!");
+            // thông báo email đã được sử dụng
             return;
         }
 
@@ -49,4 +56,7 @@ formdki.addEventListener("submit", function (event) {
     dsTk.push(tkMoi);
     localStorage.setItem("dsTk", JSON.stringify(dsTk));
     thongBaoDangKi.style.display = "flex";
+});
+btnDongThongBao.addEventListener("click", function () {
+    thongBaoThieuThongTin.style.display = "none";
 });
