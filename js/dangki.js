@@ -48,5 +48,5 @@ formdki.addEventListener("submit", function (event) {
 
     dsTk.push(tkMoi);
     localStorage.setItem("dsTk", JSON.stringify(dsTk));
-    thongBaoDangKi.style.display("block");
+    thongBaoDangKi.style.display = "flex";
 });
