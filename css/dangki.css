@@ -124,7 +124,6 @@ form button {
 }
 
 .thong-bao-dang-ki {
-    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -143,19 +142,7 @@ form button {
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
-.icon-thanh-cong {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: #000080;
-    color: white;
-    font-size: 32px;
-    font-weight: bold;
-}
+
 .hop-thong-bao h3 {
     color: #000080;
     font-size: 22px;
@@ -165,7 +152,8 @@ form button {
     color: #767474;
     margin-bottom: 25px;
 }
-.hop-thong-bao button {
+.hop-thong-bao a {
+    text-decoration: none;
     background-color: #000080;
     color: white;
     border: none;
@@ -174,9 +162,7 @@ form button {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.2s;
 }
-
-.hop-thong-bao button:hover {
-    background-color: #000066;
+#dang-ki-thanh-cong {
+    display: none;
 }
