@@ -122,3 +122,6 @@ form button {
     font-weight: bold;
     margin-left: 10px;
 }
+.thong-bao-dang-ki {
+    display: none;
+}
