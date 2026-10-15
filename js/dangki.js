@@ -57,6 +57,8 @@ formDangKi.addEventListener("submit", function (event) {
     localStorage.setItem("dsTk", JSON.stringify(dsTk));
     thongBaoDangKi.style.display = "flex";
 });
-btnDongThongBao.addEventListener("click", function () {
-    thongBaoThieuThongTin.style.display = "none";
+btnDongThongBao.forEach(function (nut) {
+    nut.addEventListener("click", function () {
+        thongBaoThieuThongTin.style.display = "none";
+    });
 });
