@@ -1,4 +1,4 @@
-const formdki = document.getElementById("form-dang-ki");
+const formDangKi = document.getElementById("form-dang-ki");
 const nameAccountInput = document.getElementById("name-account");
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
@@ -6,7 +6,7 @@ const confirmPasswordInput = document.getElementById("confirm-password");
 const thongBaoDangKi = document.getElementById("thong-bao-dang-ki");
 const thongBaoThieuThongTin = document.getElementById("thieu-thong-tin");
 const btnDongThongBao = document.querySelectorAll(".btn-dong-thong-bao");
-formdki.addEventListener("submit", function (event) {
+formDangKi.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const tenDangNhap = nameAccountInput.value;
