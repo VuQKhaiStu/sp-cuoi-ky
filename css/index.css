@@ -178,7 +178,7 @@ header>div:last-child>div:last-child>img {
     font-size: 30px;
 }
 
-#gioi-thieu>div>h3>img {
+#gioi-thieu>div>h2>img {
     width: 40px;
     height: 40px;
     margin-right: 5px;
@@ -202,13 +202,13 @@ header>div:last-child>div:last-child>img {
     padding-bottom: 50px;
 }
 
-#tinh-nang>h3 {
+#tinh-nang>h2 {
     color: #000080;
     margin-bottom: 20px;
     font-size: 30px;
 }
 
-#tinh-nang>h3>img {
+#tinh-nang>h2>img {
     width: 40px;
     height: 40px;
     margin-right: 5px;
@@ -337,14 +337,14 @@ header>div:last-child>div:last-child>img {
     margin-bottom: 30px;
 }
 
-#quy-dinh>h3 {
+#quy-dinh>h2 {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 30px;
     text-decoration: underline;
 }
 
-#quy-dinh>h3>img {
+#quy-dinh>h2>img {
     width: 35px;
     height: 35px;
     margin-right: 5px;

@@ -1,15 +1,13 @@
 const formDangNhap = document.getElementById("form-dang-nhap");
 const accountInput = document.getElementById("account");
 const passwordInput = document.getElementById("password");
-const btnDongThongBao = document.querySelectorAll(".btn-dong-thong-bao");
-const thongBaoThieuThongTin = document.getElementById("thieu-thong-tin");
 formDangNhap.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const thongTinAccount = accountInput.value;
     const matKhau = passwordInput.value;
     if (thongTinAccount === "" || matKhau === "") {
-        // thong báo phải nhập đủ thông tin
+        alert("Bạn phải nhập đủ thông tin để đăng nhập!!!")
         return;
     }
     const duLieuTk = localStorage.getItem("dsTk");
@@ -27,20 +25,15 @@ formDangNhap.addEventListener("submit", function (event) {
 
     }
     if (taiKhoanTimDuoc === null) {
-        // thông báo tài khoản không tồn tại
+        alert("Không tìm thấy tài khoản!!!")
         return;
     }
     if (matKhau !== taiKhoanTimDuoc.matKhau) {
-        // thông báo mật khẩu không đúng
+        alert("Mật khẩu vừa nhập không chính xác!!!")
         return;
 
     }
     localStorage.setItem("taiKhoanDangNhap", JSON.stringify(taiKhoanTimDuoc));
     window.location.href = "../trangchu.html";
 
-});
-btnDongThongBao.forEach(function (nut) {
-    nut.addEventListener("click", function () {
-        thongBaoThieuThongTin.style.display = "none";
-    });
 });
